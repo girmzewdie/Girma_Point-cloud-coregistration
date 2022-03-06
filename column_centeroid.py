@@ -72,8 +72,8 @@ pcd = o3d.geometry.PointCloud()
 pcd.points = o3d.utility.Vector3dVector(arr_centeroids)
 o3d.io.write_point_cloud("C:/M_Geoinformatics/point -cloud-registration/TLS/clustered_columns/col_cent_grnd.ply", pcd)
 
+# read the saved points
 points="C:/M_Geoinformatics/point -cloud-registration/TLS/clustered_columns/col_cent_grnd.ply"
-#points="Area_3/conferenceRoom_1/conferenceRoom_1.ply"
 pcd = o3d.io.read_point_cloud(points)
 
 # Vizualize
